@@ -63,7 +63,7 @@ section#redes-sociais img {
   border-radius: 50%;
   /* Fazendo a sombra nas imagens */
   box-shadow: 2px 2px 5px black;
-  box-sizing: border-box; /* faz a borda fazer parte da imagem */
+  box-sizing: border-box; /* fazendo a borda fazer parte da imagem. Necessário para não haver o deslocamento das outras imagens quando executar o hover sobre uma imagem */
 }
 
 section#redes-sociais img:hover {
