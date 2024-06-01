@@ -40,9 +40,39 @@ section#telefone {
 }
 
 iframe#tela {
+  /* Configurando o iframe para caber a imagem da tela certinho */
   position: relative;
   top: 80px;
   left: 22px;
   width: 268px;
   height: 472px;
+}
+
+section#redes-sociais {
+  /* Alinhando as imagens do lado direito da tela */
+  text-align: right;
+  padding-top: 30px;
+  padding-right: 25px;
+}
+section#redes-sociais img {
+  /* Redefinindo o tamanho das imagens dentro da section "redes-sociais" */
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  /* Transformando as imagens quadradas para redondas */
+  border-radius: 50%;
+  /* Fazendo a sombra nas imagens */
+  box-shadow: 2px 2px 5px black;
+  box-sizing: border-box; /* faz a borda fazer parte da imagem */
+}
+
+section#redes-sociais img:hover {
+  /* Fazendo uma borda ao passar o mouse na imagem */
+  border: 2px solid rgba(255, 255, 255, 0.637);
+  /* Faz a imagem se deslocar para cima e para esquerda ao passar o mouse*/
+  transform: translate(-3px, -3px);
+  /* Deslocando a sombra também */
+  box-shadow: 5px 5px 10px black;
+  /* Fazendo a movimentação da imagem mais devagar e a criação da borda mais suave */
+  transition: transform .4s, border .4s;
 }
